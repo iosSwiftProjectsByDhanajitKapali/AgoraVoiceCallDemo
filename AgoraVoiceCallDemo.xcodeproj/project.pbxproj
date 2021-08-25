@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,8 @@
 		0124443526D63AB9001AED01 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0124443326D63AB9001AED01 /* Main.storyboard */; };
 		0124443726D63ABF001AED01 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0124443626D63ABF001AED01 /* Assets.xcassets */; };
 		0124443A26D63ABF001AED01 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0124443826D63ABF001AED01 /* LaunchScreen.storyboard */; };
+		0124444626D655F3001AED01 /* audiomixing.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0124444426D655F3001AED01 /* audiomixing.mp3 */; };
+		0124444726D655F3001AED01 /* audioeffect.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0124444526D655F3001AED01 /* audioeffect.mp3 */; };
 		C3CEB19F49F6CFA1D960BF63 /* Pods_AgoraVoiceCallDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72F7C3442C15DFB9A8E6FF83 /* Pods_AgoraVoiceCallDemo.framework */; };
 /* End PBXBuildFile section */
 
@@ -25,6 +27,8 @@
 		0124443626D63ABF001AED01 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0124443926D63ABF001AED01 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0124443B26D63ABF001AED01 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0124444426D655F3001AED01 /* audiomixing.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = audiomixing.mp3; sourceTree = "<group>"; };
+		0124444526D655F3001AED01 /* audioeffect.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = audioeffect.mp3; sourceTree = "<group>"; };
 		72F7C3442C15DFB9A8E6FF83 /* Pods_AgoraVoiceCallDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AgoraVoiceCallDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D753C382168299D48CACF81 /* Pods-AgoraVoiceCallDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AgoraVoiceCallDemo.debug.xcconfig"; path = "Target Support Files/Pods-AgoraVoiceCallDemo/Pods-AgoraVoiceCallDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		D2441CF870E23C506A60632C /* Pods-AgoraVoiceCallDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AgoraVoiceCallDemo.release.xcconfig"; path = "Target Support Files/Pods-AgoraVoiceCallDemo/Pods-AgoraVoiceCallDemo.release.xcconfig"; sourceTree = "<group>"; };
@@ -63,8 +67,9 @@
 		0124442C26D63AB9001AED01 /* AgoraVoiceCallDemo */ = {
 			isa = PBXGroup;
 			children = (
-				0124442D26D63AB9001AED01 /* AppDelegate.swift */,
-				0124442F26D63AB9001AED01 /* SceneDelegate.swift */,
+				0124444526D655F3001AED01 /* audioeffect.mp3 */,
+				0124444426D655F3001AED01 /* audiomixing.mp3 */,
+				0124444126D63D09001AED01 /* App Lifecycle */,
 				0124443126D63AB9001AED01 /* ViewController.swift */,
 				0124443326D63AB9001AED01 /* Main.storyboard */,
 				0124443626D63ABF001AED01 /* Assets.xcassets */,
@@ -72,6 +77,15 @@
 				0124443B26D63ABF001AED01 /* Info.plist */,
 			);
 			path = AgoraVoiceCallDemo;
+			sourceTree = "<group>";
+		};
+		0124444126D63D09001AED01 /* App Lifecycle */ = {
+			isa = PBXGroup;
+			children = (
+				0124442D26D63AB9001AED01 /* AppDelegate.swift */,
+				0124442F26D63AB9001AED01 /* SceneDelegate.swift */,
+			);
+			path = "App Lifecycle";
 			sourceTree = "<group>";
 		};
 		8D70CCC006065902AB62B5E1 /* Frameworks */ = {
@@ -88,7 +102,6 @@
 				7D753C382168299D48CACF81 /* Pods-AgoraVoiceCallDemo.debug.xcconfig */,
 				D2441CF870E23C506A60632C /* Pods-AgoraVoiceCallDemo.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -154,6 +167,8 @@
 				0124443A26D63ABF001AED01 /* LaunchScreen.storyboard in Resources */,
 				0124443726D63ABF001AED01 /* Assets.xcassets in Resources */,
 				0124443526D63AB9001AED01 /* Main.storyboard in Resources */,
+				0124444626D655F3001AED01 /* audiomixing.mp3 in Resources */,
+				0124444726D655F3001AED01 /* audioeffect.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

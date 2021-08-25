@@ -6,5 +6,6 @@ target 'AgoraVoiceCallDemo' do
   use_frameworks!
 
   # Pods for AgoraVoiceCallDemo
+  pod 'AGEVideoLayout'
 	pod 'AgoraRtcEngine_iOS'
 end

@@ -1,16 +1,20 @@
 PODS:
+  - AGEVideoLayout (1.0.3)
   - AgoraRtcEngine_iOS (3.5.0.1)
 
 DEPENDENCIES:
+  - AGEVideoLayout
   - AgoraRtcEngine_iOS
 
 SPEC REPOS:
   trunk:
+    - AGEVideoLayout
     - AgoraRtcEngine_iOS
 
 SPEC CHECKSUMS:
+  AGEVideoLayout: db06e3eedfa1f72c6dfbce9e79b09621002e8197
   AgoraRtcEngine_iOS: b3d221ea71b8401ffb8be3daeec0ab1007a914be
 
-PODFILE CHECKSUM: b1831e2e577efa2544c40940ec9bd4d41e7d4d17
+PODFILE CHECKSUM: 928c7133f29ac54e27852c3d7e0403d2919dbc23
 
 COCOAPODS: 1.10.1
