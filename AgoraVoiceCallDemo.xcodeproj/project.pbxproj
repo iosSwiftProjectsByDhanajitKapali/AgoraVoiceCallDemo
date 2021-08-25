@@ -13,6 +13,7 @@
 		0124443526D63AB9001AED01 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0124443326D63AB9001AED01 /* Main.storyboard */; };
 		0124443726D63ABF001AED01 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0124443626D63ABF001AED01 /* Assets.xcassets */; };
 		0124443A26D63ABF001AED01 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0124443826D63ABF001AED01 /* LaunchScreen.storyboard */; };
+		C3CEB19F49F6CFA1D960BF63 /* Pods_AgoraVoiceCallDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72F7C3442C15DFB9A8E6FF83 /* Pods_AgoraVoiceCallDemo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,9 @@
 		0124443626D63ABF001AED01 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0124443926D63ABF001AED01 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0124443B26D63ABF001AED01 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		72F7C3442C15DFB9A8E6FF83 /* Pods_AgoraVoiceCallDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AgoraVoiceCallDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7D753C382168299D48CACF81 /* Pods-AgoraVoiceCallDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AgoraVoiceCallDemo.debug.xcconfig"; path = "Target Support Files/Pods-AgoraVoiceCallDemo/Pods-AgoraVoiceCallDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		D2441CF870E23C506A60632C /* Pods-AgoraVoiceCallDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AgoraVoiceCallDemo.release.xcconfig"; path = "Target Support Files/Pods-AgoraVoiceCallDemo/Pods-AgoraVoiceCallDemo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C3CEB19F49F6CFA1D960BF63 /* Pods_AgoraVoiceCallDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +47,8 @@
 			children = (
 				0124442C26D63AB9001AED01 /* AgoraVoiceCallDemo */,
 				0124442B26D63AB9001AED01 /* Products */,
+				9C402E1F21243A838541996D /* Pods */,
+				8D70CCC006065902AB62B5E1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +74,24 @@
 			path = AgoraVoiceCallDemo;
 			sourceTree = "<group>";
 		};
+		8D70CCC006065902AB62B5E1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				72F7C3442C15DFB9A8E6FF83 /* Pods_AgoraVoiceCallDemo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9C402E1F21243A838541996D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7D753C382168299D48CACF81 /* Pods-AgoraVoiceCallDemo.debug.xcconfig */,
+				D2441CF870E23C506A60632C /* Pods-AgoraVoiceCallDemo.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0124443E26D63ABF001AED01 /* Build configuration list for PBXNativeTarget "AgoraVoiceCallDemo" */;
 			buildPhases = (
+				B2B4C9A2CFC5145EF703F913 /* [CP] Check Pods Manifest.lock */,
 				0124442626D63AB9001AED01 /* Sources */,
 				0124442726D63AB9001AED01 /* Frameworks */,
 				0124442826D63AB9001AED01 /* Resources */,
+				93144DF3023780140B0D8869 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -131,6 +158,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		93144DF3023780140B0D8869 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AgoraVoiceCallDemo/Pods-AgoraVoiceCallDemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AgoraVoiceCallDemo/Pods-AgoraVoiceCallDemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AgoraVoiceCallDemo/Pods-AgoraVoiceCallDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B2B4C9A2CFC5145EF703F913 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AgoraVoiceCallDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		0124442626D63AB9001AED01 /* Sources */ = {
@@ -283,6 +352,7 @@
 		};
 		0124443F26D63ABF001AED01 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7D753C382168299D48CACF81 /* Pods-AgoraVoiceCallDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -302,6 +372,7 @@
 		};
 		0124444026D63ABF001AED01 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D2441CF870E23C506A60632C /* Pods-AgoraVoiceCallDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

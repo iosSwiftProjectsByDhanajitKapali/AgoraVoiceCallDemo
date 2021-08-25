@@ -1,24 +1,118 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AgoraVoiceCallDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EqO-XS-Qp4">
+                                <rect key="frame" x="20" y="754" width="374" height="88"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rkh-o2-lCw" userLabel="mute_Button">
+                                        <rect key="frame" x="83" y="12" width="64" height="64"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="64" id="9aY-QJ-lxU"/>
+                                            <constraint firstAttribute="height" constant="64" id="Vv6-0y-xbm"/>
+                                        </constraints>
+                                        <state key="normal" image="btn_mute"/>
+                                        <state key="selected" image="btn_mute_blue"/>
+                                        <state key="highlighted" image="btn_mute_blue"/>
+                                        <connections>
+                                            <action selector="didClickMuteButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0Li-vV-OG9"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="we4-pv-Xie" userLabel="endcall_Button">
+                                        <rect key="frame" x="155" y="12" width="64" height="64"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="64" id="S43-IF-1ZT"/>
+                                            <constraint firstAttribute="width" constant="64" id="btL-yD-bkZ"/>
+                                        </constraints>
+                                        <state key="normal" image="btn_endcall"/>
+                                        <connections>
+                                            <action selector="didClickHangUpButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="P5z-4J-7fX"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S0R-ZL-NeC" userLabel="speaker_Button">
+                                        <rect key="frame" x="227" y="12" width="64" height="64"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="64" id="6z7-rG-z4H"/>
+                                            <constraint firstAttribute="width" constant="64" id="fKU-QH-RYT"/>
+                                        </constraints>
+                                        <state key="normal" image="btn_speaker"/>
+                                        <state key="selected" image="btn_speaker_blue"/>
+                                        <connections>
+                                            <action selector="didClickSwitchSpeakerButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MC0-js-ys2"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="88" id="EGM-Jb-Ufr"/>
+                                    <constraint firstItem="S0R-ZL-NeC" firstAttribute="leading" secondItem="we4-pv-Xie" secondAttribute="trailing" constant="8" id="J7q-Uf-tJU"/>
+                                    <constraint firstItem="S0R-ZL-NeC" firstAttribute="centerY" secondItem="we4-pv-Xie" secondAttribute="centerY" id="KgH-TP-uhw"/>
+                                    <constraint firstItem="Rkh-o2-lCw" firstAttribute="centerY" secondItem="we4-pv-Xie" secondAttribute="centerY" id="PEN-OR-S9q"/>
+                                    <constraint firstItem="we4-pv-Xie" firstAttribute="centerX" secondItem="EqO-XS-Qp4" secondAttribute="centerX" id="ZAC-sq-O6f"/>
+                                    <constraint firstItem="we4-pv-Xie" firstAttribute="leading" secondItem="Rkh-o2-lCw" secondAttribute="trailing" constant="8" id="iQu-Dh-ixM"/>
+                                    <constraint firstItem="we4-pv-Xie" firstAttribute="centerY" secondItem="EqO-XS-Qp4" secondAttribute="centerY" id="u9a-ce-9Xy"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hIB-eL-13h">
+                                <rect key="frame" x="146.5" y="64" width="121" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2oY-6n-7H7">
+                                <rect key="frame" x="174.5" y="425" width="65" height="46"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <inset key="contentEdgeInsets" minX="5" minY="5" maxX="5" maxY="5"/>
+                                <state key="normal" title="Join"/>
+                                <connections>
+                                    <action selector="joinButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1cI-ft-5Gr"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="hIB-eL-13h" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="0US-Br-hfC"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="EqO-XS-Qp4" secondAttribute="bottom" constant="20" id="3cE-na-bxE"/>
+                            <constraint firstItem="hIB-eL-13h" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="8hG-cF-nad"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="EqO-XS-Qp4" secondAttribute="trailing" constant="20" id="H3o-C3-Ih8"/>
+                            <constraint firstItem="EqO-XS-Qp4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="cvS-M7-94p"/>
+                            <constraint firstItem="2oY-6n-7H7" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ewc-7B-m4U"/>
+                            <constraint firstItem="2oY-6n-7H7" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="j9P-lJ-eBQ"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="controlButtonsView" destination="EqO-XS-Qp4" id="lLi-s9-5bC"/>
+                        <outlet property="joinButton" destination="2oY-6n-7H7" id="rWI-Sq-acb"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-3" y="81"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="btn_endcall" width="40" height="40"/>
+        <image name="btn_mute" width="40" height="40"/>
+        <image name="btn_mute_blue" width="40" height="40"/>
+        <image name="btn_speaker" width="40" height="40"/>
+        <image name="btn_speaker_blue" width="40" height="40"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>
